@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/html">
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/html" xmlns:outline="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8">
     <title>Kemaru: New Game</title>
 <style>
+    .center{
+        alignment: center;
+    }
 input {
   border-top-style: hidden;
   border-right-style: hidden;
@@ -39,33 +42,48 @@ tr:nth-child(n) td {
   border-bottom:solid ;
 }
 body{
-    background: lightgray;
+    background: black;
 }
+    .topcorner{
+   position:absolute;
+   top:10px;
+   right:10px;
+  }
 </style>
   </head>
   <body>
-  <form align="center" name="Item_2" action='{{ url_for('solution') }}' method="GET">
+  <div class='form'>
+  <form align="center" name="Item_2" action='{{ url_for('submit') }}' method="POST">
+  <div class="field">
   <table id="grid">
 {% for keys, values in result.items() %}
     <tr>
     {% for key, value in values.items() %}
             {% if value[0] == 0 %}
-                <td bgcolor={{ value[1] }}><input id={{ key }}  type="text" pattern= "\d*" STYLE="; outline: none; border: none; border-color: transparent; background-color: {{ value[1] }}" maxlength="1" size="4x" class="fix"></td>
+                <td bgcolor={{ value[1] }}><input id={{ key }} name={{ key }} type="text" pattern= "\d*" STYLE=" outline: none; border: none; border-color: transparent; background-color: {{ value[1] }}" maxlength="1" size="4x" class="fix"></td>
             {% else %}
-                <td bgcolor={{ value[1] }}><input id={{ key }}  type="text" STYLE="font-weight: bold; border: none; border-color: transparent; background-color: {{ value[1] }}" value={{ value[0] }} disabled maxlength="1" size="4x" class="fix"></td>
+                <td bgcolor={{ value[1] }}><input id={{ key }}  name={{ key }} type="text" STYLE="font-weight: bold; border: none; border-color: transparent; background-color: {{ value[1] }}" value={{ value[0] }} disabled maxlength="1" size="4x" class="fix"></td>
         {% endif %}
     {% endfor %}
     </tr>
   {% endfor %}
 </table>
-  <input type="submit" href="{{ url_for('submit') }}" STYLE="alignment: center; border: 1px">
-  <div>
+  </div>
+  <div class="actions">
+  <input type="submit" id= "submit_data" href="{{ url_for('submit') }}" STYLE="alignment: center; padding: 10px; border: 1px">
+      </div>
+  </form>
+  </div>
 
-  <input type="submit" href="{{ url_for('solution') }}" value="Solution"  STYLE="alignment: center; border: 1px">
+  <form class="topcorner" name="Item_3" action='{{ url_for('quit') }}' method="GET">
+  <div class=".center">
+
+  <input type="submit" href="{{ url_for('quit') }}" value="Give Up"  STYLE="alignment: center;border: 1px; padding: 10px; color: cornflowerblue;">
 
   {% block content %}
   {% endblock %}
   </div>
   </form>
+
   </body>
 </html>
