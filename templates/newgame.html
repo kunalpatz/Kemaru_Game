@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8">
+    <title>Kemaru: New Game</title>
+<style>
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+}
+table {
+  margin:1em auto;
+  border: 1px solid black;
+}
+.fix{
+text-align:center;
+    display: flex;
+    border: none;
+    border-color: transparent;
+}
+td {
+  height:50px;
+  width:50px;
+  border:2px solid;
+  text-align:center;
+}
+td:first-child {
+  border-left:solid;
+}
+td:nth-child(n) {
+  border-right:solid ;
+}
+tr:first-child {
+  border-top:solid;
+}
+tr:nth-child(n) td {
+  border-bottom:solid ;
+}
+body{
+    background: lightgray;
+}
+</style>
+  </head>
+  <body>
+  <form align="center" name="Item_2" action='{{ url_for('solution') }}' method="GET">
+  <table id="grid">
+{% for keys, values in result.items() %}
+    <tr>
+    {% for key, value in values.items() %}
+            {% if value[0] == 0 %}
+                <td bgcolor={{ value[1] }}><input id={{ key }}  type="text" pattern= "\d*" STYLE="; outline: none; border: none; border-color: transparent; background-color: {{ value[1] }}" maxlength="1" size="4x" class="fix"></td>
+            {% else %}
+                <td bgcolor={{ value[1] }}><input id={{ key }}  type="text" STYLE="font-weight: bold; border: none; border-color: transparent; background-color: {{ value[1] }}" value={{ value[0] }} disabled maxlength="1" size="4x" class="fix"></td>
+        {% endif %}
+    {% endfor %}
+    </tr>
+  {% endfor %}
+</table>
+  <input type="submit" href="{{ url_for('submit') }}" STYLE="alignment: center; border: 1px">
+  <div>
+
+  <input type="submit" href="{{ url_for('solution') }}" value="Solution"  STYLE="alignment: center; border: 1px">
+
+  {% block content %}
+  {% endblock %}
+  </div>
+  </form>
+  </body>
+</html>

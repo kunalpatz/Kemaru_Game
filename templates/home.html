@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Welcome to Kemaru</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=2">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
+}
+
+/* Style the header */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: darkslategray;
+  color: ghostwhite;
+}
+.option{
+    color: ghostwhite;
+}
+td{
+    text-align:center;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+body{
+    background: darkgray;
+}
+.button{
+    color: ghostwhite;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="../static/titleImage.jpeg" alt="icon" style="size: legal">
+  <h1>Kemaru</h1>
+</div>
+
+<form align="center" name="Item_1" action='{{ url_for('new_game') }}' method="POST">
+    <table align="center">
+        <tr>
+            <td class="option">
+        Select Difficulty Level
+            </td>
+        </tr>
+        <tr>
+            <td>
+        <select name="level" id="level" style="background: darkslategray" class="option">
+            <option value="normal" class="option">Normal</option>
+          <option value="easy" class="option">Easy (For Kids!)</option>
+        </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <input type="submit" href="{{ url_for('new_game') }}" value="New Game" style="background: darkslategray" class="button">
+            </td>
+        </tr>
+        </table>
+</form>
+<div>
+<p align="center"><a href="{{ url_for('rules') }}">Rules</a></p>
+<p align="center"><a href="{{ url_for('about') }}">About</a></p>
+
+{% block content %}
+{% endblock %}
+</div>
+<div class="header">
+    <p>Author: Kunal PATIL</p>
+    <p>kunal.patil@epita.fr</p>
+</div>
+</body>
+</html>

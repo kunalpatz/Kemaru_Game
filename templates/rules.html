@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rules</title>
+
+</head>
+<style>
+    p{
+        text-align: center;
+    }
+</style>
+<body>
+{% extends 'home.html' %}
+{% block content %}
+    <p style="text-align: center">In this logic game, you have to find the missing numbers in areas made up of 1 to 5 boxes.</p>
+    <p style="text-align: center">An area of a box necessarily contains the number 1, an area of two boxes contains</p>
+    <p style="text-align: center">the numbers 1 and 2, an area of three boxes contains the numbers 1, 2 and 3, etc. </p>
+    <p style="text-align: center">Two identical numbers cannot be placed side by side side by side, nor diagonally.</p>
+{% endblock %}
+</body>
+
+</html>

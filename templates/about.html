@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+<style>
+    p{
+        text-align: center;
+    }
+</style>
+<body>
+{% extends 'home.html' %}
+{% block content %}
+<p style="text-align: center">
+Welcome to Kemaru Game, A basic puzzle game created for fun and logic to play with a focus.</p>
+<p style="text-align: center">
+Kemaru is a uniquely satisfying puzzle in which a grid is divided into outlined blocks,</p>
+<p style="text-align: center">
+each containing up to five cells. Every cell must contain a number from 1 to 5</p>
+<p style="text-align: center">
+(depending on the number of cells in the block).</p>
+<p style="text-align: center">
+The solver has to fill each cell so that no two identical numbers touch – not even diagonally.</p>
+{% endblock %}
+</body>
+
+</html>
