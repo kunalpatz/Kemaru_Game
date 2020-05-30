@@ -1,81 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Welcome to Kemaru</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=2">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-    align-content: center;
-}
+    <title>Welcome to Kemaru</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            align-content: center;
+        }
 
-.header {
-  padding: 5px;
-  text-align: center;
-  background: darkslateblue;
-  color: ghostwhite;
+        .header {
+            padding: 5px;
+            text-align: center;
+            background: darkslateblue;
+            color: ghostwhite;
 
-}
-.data{
-    color: ghostwhite;
-    background: cornflowerblue;
-}
-.option{
-    color: ghostwhite;
-    background: dimgrey;
-}
-td{
-    text-align:center;
-}
+        }
 
-.header h1 {
-  font-size: 40px;
-}
+        .data {
+            color: ghostwhite;
+            background: cornflowerblue;
+        }
 
-body{
-    background-image: url("../static/backgrnd.jpg");
-}
-.button{
-    color: ghostwhite;
-}
-</style>
+        .option {
+            color: ghostwhite;
+            background: dimgrey;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 40px;
+        }
+
+        body {
+            background-image: url("../static/backgrnd.jpg");
+        }
+
+        .button {
+            color: ghostwhite;
+        }
+    </style>
 </head>
 <body>
 
 <div class="header">
-  <img src="../static/titleImage.jpeg" alt="icon" style="size: legal">
-  <h1>K E M A R U</h1>
+    <img src="../static/titleImage.jpeg" alt="icon" style="size: legal">
+    <h1>K E M A R U</h1>
 </div>
 
 <form align="center" name="Item_1" action='{{ url_for('new_game') }}' method="POST">
     <table align="center">
         <tr>
             <td class="data">
-        Select Difficulty Level
+                Select Difficulty Level
             </td>
         </tr>
         <tr>
             <td>
-        <select name="level" id="level" style="background: dimgrey" class="option">
-            <option value="normal" class="option">Normal</option>
-          <option value="easy" class="option">Easy (For Kids!)</option>
-        </select>
+                <select name="level" id="level" style="background: dimgrey" class="option">
+                    <option value="normal" class="option">Normal</option>
+                    <option value="easy" class="option">Easy (For Kids!)</option>
+                </select>
             </td>
         </tr>
         <tr>
             <td>
-            <input type="submit" href="{{ url_for('new_game') }}" value="New Game" style="background: darkslategray; padding: 10px" class="button">
+                <input type="submit" href="{{ url_for('new_game') }}" value="New Game"
+                       style="background: darkslategray; padding: 10px" class="button">
             </td>
         </tr>
-        </table>
+    </table>
 </form>
 <div>
-<p align="center"><a href="{{ url_for('rules') }}">Rules</a></p>
-<p align="center"><a href="{{ url_for('about') }}">About</a></p>
+    <p align="center"><a href="{{ url_for('rules') }}">Rules</a></p>
+    <p align="center"><a href="{{ url_for('about') }}">About</a></p>
 
-{% block content %}
-{% endblock %}
+    {% block content %}
+    {% endblock %}
 </div>
 <div class="header">
     <p>Author: Kunal PATIL</p>

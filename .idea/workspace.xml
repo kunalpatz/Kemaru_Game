@@ -3,8 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="931573df-042d-42e8-8496-7d2bdf91f94c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getBoard.py" beforeDir="false" afterPath="$PROJECT_DIR$/getBoard.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/temp.json" beforeDir="false" afterPath="$PROJECT_DIR$/temp/temp.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/newgame.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/newgame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/quit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/quit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rules.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rules.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/solution.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/solution.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/solution_after_try.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/solution_after_try.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/submitWin.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/submitWin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/submitWrong.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/submitWrong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +107,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1590795517301</updated>
-      <workItem from="1590795520788" duration="7572000" />
+      <workItem from="1590795520788" duration="7961000" />
     </task>
     <task id="LOCAL-00001" summary="updating requirements.txt">
       <created>1590797330580</created>
@@ -118,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590800887703</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Finalizing README.md">
+      <created>1590838084809</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1590838084809</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +148,8 @@
     <MESSAGE value="updating requirements.txt" />
     <MESSAGE value="Adding DOCKERFILE" />
     <MESSAGE value="Final push" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final push" />
+    <MESSAGE value="Finalizing README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalizing README.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590799646830">
@@ -140,10 +160,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="394" y="144" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1590797707223" />
-    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1590800886478">
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1590838083887">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1590800886478" />
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1590838083887" />
     <state width="1237" height="130" key="GridCell.Tab.0.bottom" timestamp="1590836899650">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -164,14 +184,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1590797274856" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1590800900211">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1590838132074">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1590800900211" />
-    <state x="354" y="132" key="git4idea.merge.GitPullDialog" timestamp="1590797434056">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1590838132074" />
+    <state x="354" y="132" key="git4idea.merge.GitPullDialog" timestamp="1590838111345">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="354" y="132" key="git4idea.merge.GitPullDialog/0.0.1280.680@0.0.1280.680" timestamp="1590797434056" />
+    <state x="354" y="132" key="git4idea.merge.GitPullDialog/0.0.1280.680@0.0.1280.680" timestamp="1590838111345" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1590795814477">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

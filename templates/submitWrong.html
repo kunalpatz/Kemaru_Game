@@ -5,79 +5,88 @@
     <title>Sorry you lost!!</title>
 </head>
 <style>
-    .topcorner{
-   position: center;
-   top:10px;
-   right:10px;
-  }
+    .topcorner {
+        position: center;
+        top: 10px;
+        right: 10px;
+    }
 
     .header {
-  padding: 10px;
-  text-align: center;
-}
-    input {
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: hidden;
-}
-table {
-  margin:1em auto;
-  border: 1px solid black;
-}
-
-.fix{
-text-align:center;
-    display: flex;
-    border: none;
-    border-color: transparent;
-}
-    p{
+        padding: 10px;
         text-align: center;
     }
-    td {
-  height:50px;
-  width:50px;
-  border:2px solid;
-  text-align:center;
-}
 
-td:first-child {
-  border-left:solid;
-}
-td:nth-child(n) {
-  border-right:solid ;
-}
-tr:first-child {
-  border-top:solid;
-}
-tr:nth-child(n) td {
-  border-bottom:solid ;
-}
-body{
-    background: darkgrey;
-}
+    input {
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: hidden;
+    }
+
+    table {
+        margin: 1em auto;
+        border: 1px solid black;
+    }
+
+    .fix {
+        text-align: center;
+        display: flex;
+        border: none;
+        border-color: transparent;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    td {
+        height: 50px;
+        width: 50px;
+        border: 2px solid;
+        text-align: center;
+    }
+
+    td:first-child {
+        border-left: solid;
+    }
+
+    td:nth-child(n) {
+        border-right: solid;
+    }
+
+    tr:first-child {
+        border-top: solid;
+    }
+
+    tr:nth-child(n) td {
+        border-bottom: solid;
+    }
+
+    body {
+        background: darkgrey;
+    }
 </style>
 <body>
 <div class="header">
-  <img src="../static/loose.png" alt="icon" width="150" height="150" style="size: legal">
-  <h1>SORRY It's Wrong!!!</h1>
+    <img src="../static/loose.png" alt="icon" width="150" height="150" style="size: legal">
+    <h1>SORRY It's Wrong!!!</h1>
     <h2>Try again...</h2>
     <form class="topcorner" align="center" name="Item_4" action='{{ url_for('home') }}'>
-  <input type="submit" href="{{ url_for('home') }}" value="Home" style="background: darkslategray; padding: 10px; color: ghostwhite;" class="button">
+        <input type="submit" href="{{ url_for('home') }}" value="Home"
+               style="background: darkslategray; padding: 10px; color: ghostwhite;" class="button">
     </form>
 </div>
 
 
-
 <form align="center" name="Item_3" action='{{ url_for('solution_after_try') }}' method="GET">
-  <div>
-    <h2>Confused? Refer Solution</h2>
-  <input type="submit" href="{{ url_for('solution_after_try') }}" value="Solution"  STYLE="alignment: center; border: 1px; color: dodgerblue; background: darkslategray;">
+    <div>
+        <h2>Confused? Refer Solution</h2>
+        <input type="submit" href="{{ url_for('solution_after_try') }}" value="Solution"
+               STYLE="alignment: center; border: 1px; color: dodgerblue; background: darkslategray;">
 
-  {% block content %}
-  {% endblock %}
-  </div>
+        {% block content %}
+        {% endblock %}
+    </div>
 </form>
 </body>
 </html>

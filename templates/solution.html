@@ -7,7 +7,7 @@
 
 </head>
 <style>
-    p{
+    p {
         text-align: center;
     }
 </style>
@@ -15,15 +15,17 @@
 {% extends 'quit.html' %}
 {% block content %}
 
-  <table id="grid">
-{% for key, value in soln.items() %}
-<tr>
-    {% for k, v in value.items() %}
-        <td bgcolor={{ v[1] }}><input id={{ k }}  type="text" STYLE="font-weight: bold; border: 0; background-color: {{ value[1] }}" value={{ v[0] }} disabled maxlength="1" size="4x" class="fix"></td>
-    {% endfor %}
-    </tr>
-  {% endfor %}
-</table>
+    <table id="grid">
+        {% for key, value in soln.items() %}
+            <tr>
+                {% for k, v in value.items() %}
+                    <td bgcolor={{ v[1] }}><input id={{ k }}  type="text"
+                                                  STYLE="font-weight: bold; border: 0; background-color: {{ value[1] }}"
+                                                  value={{ v[0] }} disabled maxlength="1" size="4x" class="fix"></td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
 
 
 {% endblock %}

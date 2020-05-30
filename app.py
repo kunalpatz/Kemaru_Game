@@ -7,19 +7,23 @@ from getBoard import *
 
 app = Flask(__name__)
 
+
 @app.route("/")
 def home():
     return render_template("home.html")
+
 
 @app.route("/rules")
 def rules():
     return render_template("rules.html")
 
+
 @app.route("/about")
 def about():
     return render_template("about.html")
 
-@app.route("/new" , methods=['POST'])
+
+@app.route("/new", methods=['POST'])
 def new_game():
     data = launch(request.form['level'])
     final_layout = {'final_layout': data['final_solution'], 'unsolved': data['pattern']}
@@ -30,18 +34,22 @@ def new_game():
     file.close()
     return render_template("newgame.html", result=data['pattern'])
 
+
 @app.route("/solution", methods=["GET", "POST"])
 def solution():
     with open('temp/temp.json', 'r') as file:
         data = json.load(file)
     file.close()
     return render_template("solution.html", result=data['unsolved'], soln=data['final_layout'])
-@app.route("/quit",  methods=["GET", "POST"])
+
+
+@app.route("/quit", methods=["GET", "POST"])
 def quit():
     with open('temp/temp.json', 'r') as file:
         data = json.load(file)
     file.close()
     return render_template("quit.html", result=data['unsolved'], soln=data['final_layout'])
+
 
 @app.route("/solution_after_try", methods=["GET", "POST"])
 def solution_after_try():
@@ -53,7 +61,7 @@ def solution_after_try():
 
 @app.route("/submit", methods=["GET", "POST"])
 def submit():
-    userInputs={}
+    userInputs = {}
     solution_set = {}
     decision = []
 
@@ -80,8 +88,6 @@ def submit():
         return render_template("submitWrong.html", soln=data['final_layout'])
     else:
         return render_template("submitWin.html")
-
-
 
 
 if __name__ == "__main__":

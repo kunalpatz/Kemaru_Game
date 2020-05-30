@@ -1,5 +1,6 @@
 from controller import *
 
+
 def launch(userInput):
     if userInput == 'easy':
         number = 6
@@ -24,9 +25,6 @@ def launch(userInput):
     for key, val in inner_square.items():
         inner_square[key] = colors[val]
 
-
     layout = split_dict_equally(pattern_generator(board, inner_square), number)
     solution_layout = split_dict_equally(pattern_generator(final_solution, inner_square), number)
     return {'pattern': layout, 'final_solution': solution_layout}
-
-
