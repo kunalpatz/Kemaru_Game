@@ -1,8 +1,9 @@
-from flask import Flask, render_template, request, url_for, send_from_directory
-from getBoard import *
 import json
 import os
-from werkzeug.datastructures import ImmutableMultiDict
+
+from flask import Flask, render_template, request
+
+from getBoard import *
 
 app = Flask(__name__)
 

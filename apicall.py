@@ -1,7 +1,3 @@
-"""
-WORKING FINE
-
-"""
 import requests
 import random
 

@@ -1,9 +1,3 @@
-"""
-ABLE TO GET BOARD, MAP and SOLUTION
-MAPPED with UI
-
-"""
-
 from apicall import *
 
 def launch(userInput):
