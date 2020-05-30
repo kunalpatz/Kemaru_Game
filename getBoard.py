@@ -1,4 +1,4 @@
-from apicall import *
+from controller import *
 
 def launch(userInput):
     if userInput == 'easy':

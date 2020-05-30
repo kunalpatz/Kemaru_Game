@@ -1,9 +1,10 @@
 import requests
 import random
 
+
 def easy():
     number = random.randint(1, 1554)
-    url = "https://rcijeux.fr/drupal_game/20minutes/kemaru/grids/" + str(number) + ".kemj"
+    url = "https://rcijeux.fr/drupal_game/20minutes/kemaru/grids/"+ str(number) + ".kemj"
     return getData(url)
 
 def hard():
