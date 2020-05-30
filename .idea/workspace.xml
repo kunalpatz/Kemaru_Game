@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="931573df-042d-42e8-8496-7d2bdf91f94c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Kemaru.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Kemaru.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apicall.py" beforeDir="false" afterPath="$PROJECT_DIR$/apicall.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/temp.json" beforeDir="false" afterPath="$PROJECT_DIR$/temp/temp.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +95,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1590795517301</updated>
-      <workItem from="1590795520788" duration="5241000" />
+      <workItem from="1590795520788" duration="7572000" />
     </task>
     <task id="LOCAL-00001" summary="updating requirements.txt">
       <created>1590797330580</created>
@@ -112,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590797917964</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Final push">
+      <created>1590800887703</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590800887703</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,7 +128,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="updating requirements.txt" />
     <MESSAGE value="Adding DOCKERFILE" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding DOCKERFILE" />
+    <MESSAGE value="Final push" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final push" />
   </component>
   <component name="WindowStateProjectService">
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590799646830">
@@ -133,34 +140,34 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="394" y="144" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1590797707223" />
-    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1590797917203">
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1590800886478">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1590797917203" />
-    <state width="1237" height="130" key="GridCell.Tab.0.bottom" timestamp="1590800821236">
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1590800886478" />
+    <state width="1237" height="130" key="GridCell.Tab.0.bottom" timestamp="1590836899650">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="130" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590800821236" />
-    <state width="1237" height="130" key="GridCell.Tab.0.center" timestamp="1590800821236">
+    <state width="1237" height="130" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590836899650" />
+    <state width="1237" height="130" key="GridCell.Tab.0.center" timestamp="1590836899650">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="130" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590800821236" />
-    <state width="1237" height="130" key="GridCell.Tab.0.left" timestamp="1590800821236">
+    <state width="1237" height="130" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590836899650" />
+    <state width="1237" height="130" key="GridCell.Tab.0.left" timestamp="1590836899650">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="130" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590800821236" />
-    <state width="1237" height="130" key="GridCell.Tab.0.right" timestamp="1590800821236">
+    <state width="1237" height="130" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590836899650" />
+    <state width="1237" height="130" key="GridCell.Tab.0.right" timestamp="1590836899650">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="130" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590800821236" />
+    <state width="1237" height="130" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590836899650" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1590797274856">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1590797274856" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1590797456488">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1590800900211">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1590797456488" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1590800900211" />
     <state x="354" y="132" key="git4idea.merge.GitPullDialog" timestamp="1590797434056">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -171,7 +178,7 @@
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1590795814477" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Kemaru_Game$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1590800821201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Kemaru_Game$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1590836899633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Kemaru_Game$app.coverage" NAME="app Coverage Results" MODIFIED="1590796921582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
