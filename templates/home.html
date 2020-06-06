@@ -13,14 +13,13 @@
         .header {
             padding: 5px;
             text-align: center;
-            background: darkslateblue;
+            background: #1A1A1D;
             color: ghostwhite;
-
         }
 
         .data {
             color: ghostwhite;
-            background: cornflowerblue;
+            background: #1A1A1D;
         }
 
         .option {
@@ -33,11 +32,12 @@
         }
 
         .header h1 {
-            font-size: 40px;
+            font-size: 36px;
+            font-family: "Comic Sans MS", sans-serif;
         }
 
         body {
-            background-image: url("../static/backgrnd.jpg");
+            background-image: url("../static/bg.jpg");
         }
 
         .button {
@@ -70,7 +70,7 @@
         <tr>
             <td>
                 <input type="submit" href="{{ url_for('new_game') }}" value="New Game"
-                       style="background: darkslategray; padding: 10px" class="button">
+                       style="background: black; padding: 10px" class="button">
             </td>
         </tr>
     </table>
@@ -83,7 +83,7 @@
     {% endblock %}
 </div>
 <div class="header">
-    <p>Author: Kunal PATIL</p>
+    <p>Created by: PATIL Kunal</p>
     <p>kunal.patil@epita.fr</p>
 </div>
 </body>

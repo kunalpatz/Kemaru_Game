@@ -16,8 +16,7 @@ Framework: Flask
 Languages used:
     Python 
     HTML
-    CSS
-    JS 
+    CSS    
 ```
 
 ##Arborsence
@@ -29,6 +28,10 @@ Kemaru_Game-
         |- temp.json (temporary json file for saving current grid information)
     |- templates
         |- <All html files for creating game view>
+    |- database
+        |- init.py (initializing variables for grid patterns)
+        |- urls.json (urls for fetching grids) 
+        |- offline_grids.json (offline grids in case of network connectivity)
     |- app.py (Entry point of the application)
     |- controller.py (functions for processing the data)
     |- getBoard.py (creating grids for the game)
@@ -66,3 +69,6 @@ Kemaru_Game-
 2. Generating border lines instead of color sets for inner patterns in grids
 3. Creating as a service
 ``` 
+
+## Github:
+https://github.com/kunalpatz/Kemaru_Game.git

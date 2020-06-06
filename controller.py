@@ -1,21 +1,22 @@
 import requests
 import random
+from database.init import *
 
 
 def easy():
-    number = random.randint(1, 1554)
-    url = "https://rcijeux.fr/drupal_game/20minutes/kemaru/grids/" + str(number) + ".kemj"
-    return getData(url)
+    number = random.randint(580, 1600)
+    url = easy_grid + str(number) + ".kemj"
+    return get_data(url, "6x6")
 
 
 def hard():
     number = random.randint(1, 190)
     init = random.randint(1, 2)
-    url = "https://rcijeux.fr/drupal_game/telestar/kemaru/grids/kemaru_" + str(init) + "_" + str(number) + ".kemj"
-    return getData(url)
+    url = hard_grid + str(init) + "_" + str(number) + ".kemj"
+    return get_data(url, "9x9")
 
 
-def getData(url):
+def get_data(url, pattern):
     response = requests.get(url)
     if response.status_code == 200:
         solution = response.text.split('solution:')[1].split(',')[0]
@@ -30,7 +31,7 @@ def getData(url):
         return {'solution': [int(x) for x in str(int(solution.strip('\"')))],
                 'zone': [str(x) for x in zone.strip('\r\n').strip('\"')], 'places': places_dict}
     else:
-        getData(url)
+        return get_offline_data(pattern)
 
 
 def create_grids(getPattern_to_solve, number):
@@ -75,3 +76,10 @@ def pattern_generator(board, inner_square):
     for k in board.keys():
         pattern[k] = list(pattern[k] for pattern in club)
     return pattern
+
+
+def get_offline_data(pattern):
+    with open('database/offline_grids.json') as json_file:
+        data = json.load(json_file)
+        number = random.randint(1500, 1600)
+    return data[pattern][str(number)]
